@@ -1,0 +1,3 @@
+ cd "C:\Users\devap\Student ResultAnalysis"
+PS C:\Users\devap\Student ResultAnalysis> python app.py
+http://127.0.0.1:5000/

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graph</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h2>Visualization Graph</h2>
+    <img src="{{ url_for('static', filename=graph_name+'.png') }}" alt="Graph">
+     <p>Image Path: {{ url_for('static', filename=graph_name+'.png') }}</p>
+    <br><a href="/home">Back to Home</a>
+</body>
+</html>

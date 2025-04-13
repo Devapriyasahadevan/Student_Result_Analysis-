@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Student Result Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="home-container">
+        <h1>Student Result Analysis</h1>
+        <p>This project helps analyze student performance based on various factors such as gender, parental education, marital status, and ethnic background. Graphs below help visualize the insights.</p>
+
+       <div class="button-container">
+           <a href="{{ url_for('show_graph', graph_name='gender_distribution') }}"><button>Gender Distribution</button></a>
+           <a href="{{ url_for('show_graph', graph_name='parent_education_vs_score') }}"><button>Parent Education vs Score</button></a>
+           <a href="{{ url_for('show_graph', graph_name='parent_marital_status_vs_score') }}"><button>Parent Marital Status vs Score</button></a>
+           <a href="{{ url_for('show_graph', graph_name='math_score') }}"><button>Math Score</button></a>
+           <a href="{{ url_for('show_graph', graph_name='reading_score') }}"><button>Reading Score</button></a>
+           <a href="{{ url_for('show_graph', graph_name='writing_score') }}"><button>Writing Score</button></a>
+           <a href="{{ url_for('show_graph', graph_name='ethnic_group_distribution') }}"><button>Ethnic Group Distribution</button></a>
+      </div>
+
+
+        <br><a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</body>
+</html>
+
